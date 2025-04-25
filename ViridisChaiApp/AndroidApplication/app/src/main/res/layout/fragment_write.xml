@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/soft">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:backgroundTint="@color/black">
+
+        <!-- The title of the fragment -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Write"
+            android:textSize="24sp"
+            android:textColor="@color/darkgreen"
+            android:textStyle="bold"/>
+
+        <!-- To edit date -->
+        <EditText
+            android:id="@+id/dateField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Date"
+            android:textColorHint="@color/darkgreen"
+            android:textColor="@color/black"
+            />
+
+        <!-- To write title -->
+        <EditText
+            android:id="@+id/titleField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:textColorHint="@color/darkgreen"
+            android:textColor="@color/black"/>
+
+        <!-- To write a description -->
+        <EditText
+            android:id="@+id/contentField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write something..."
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:textColorHint="@color/darkgreen"
+            android:textColor="@color/black"/>
+
+        <!-- Icons for media attachments -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center">
+
+            <!-- Button to record an audio-->
+            <ImageButton
+                android:id="@+id/recordAudioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mic"
+                android:contentDescription="Record Audio"
+                android:background="@color/lightgreen"
+                android:padding="5sp"/>
+
+            <!-- Button to add image from gallery-->
+            <ImageButton
+                android:id="@+id/chooseImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_gallery"
+                android:contentDescription="Choose Image"
+                android:background="@color/lightgreen"
+                android:padding="5sp"
+                android:layout_marginLeft="5sp"/>
+        </LinearLayout>
+
+        <!-- Button to save the new entry-->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/lightgreen"
+            android:textColor="@color/soft"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</ScrollView>

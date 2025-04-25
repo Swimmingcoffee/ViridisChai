@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/soft"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- The title of the entry-->
+        <TextView
+            android:id="@+id/detailTitle"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/darkgreen"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- The description of the entry -->
+        <TextView
+            android:id="@+id/detailContent"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkgreen"/>
+
+        <!-- Image of the entry -->
+        <ImageView
+            android:id="@+id/detailImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"/>
+
+        <!-- Audio Play Button -->
+        <Button
+            android:id="@+id/playAudioButton"
+            android:text="Play Audio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone"
+            android:backgroundTint="@color/lightgreen"
+            android:textColor="#F8FEF6"/>
+
+        <!-- Button to edit the entry -->
+        <Button
+            android:id="@+id/editButton"
+            android:text="Edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/lightgreen"
+            android:textColor="#F8FEF6"/>
+
+        <!-- Button to delete the entry -->
+        <Button
+            android:id="@+id/deleteButton"
+            android:text="Delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/lightgreen"
+            android:textColor="#F8FEF6"/>
+
+    </LinearLayout>
+</ScrollView>

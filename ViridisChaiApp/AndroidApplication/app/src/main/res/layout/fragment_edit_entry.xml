@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/soft">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black">
+
+        <!-- The title of the entry, which can be edited -->
+        <EditText
+            android:id="@+id/editTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:textColorHint="@color/darkgreen"
+            android:textColor="@color/black"/>
+
+        <!-- The entry description, which can be edited -->
+        <EditText
+            android:id="@+id/editContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:hint="Content"
+            android:inputType="textMultiLine"
+            android:minLines="10"
+            android:textColorHint="@color/darkgreen"
+            android:textColor="@color/black"/>
+
+        <!-- The button to save changes -->
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Changes"
+            android:backgroundTint="@color/lightgreen"
+            android:textColor="#F8FEF6"/>
+    </LinearLayout>
+
+</ScrollView>
+
